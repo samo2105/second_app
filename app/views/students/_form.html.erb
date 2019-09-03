@@ -1,3 +1,4 @@
+<div class="card bg-light text-black container pb-2 pt-2"
 <%= form_with(model: student, local: true) do |form| %>
   <% if student.errors.any? %>
     <div id="error_explanation">
@@ -12,21 +13,22 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.label :name, class:'col-sm-3' %>
+    <%= form.text_field :name, class:'col-sm-7' %>
   </div>
 
   <div class="field">
-    <%= form.label :age %>
-    <%= form.number_field :age %>
+    <%= form.label :age, class:'col-sm-3' %>
+    <%= form.number_field :age, class:'col-sm-7' %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.label :email, class:'col-sm-3' %>
+    <%= form.text_field :email, class:'col-sm-7' %>
   </div>
-
+<br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Submit', class:'btn btn-primary container' %>
   </div>
 <% end %>
+</div>

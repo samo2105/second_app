@@ -1,6 +1,9 @@
-<h1>Editing Student</h1>
-
+<br>
+<h1 class="card text-white bg-light container text-center">Editing Student</h1>
+<br>
 <%= render 'form', student: @student %>
-
-<%= link_to 'Show', @student %> |
-<%= link_to 'Back', students_path %>
+<br>
+<div class="container">
+<%= link_to 'Show', @student, class:'btn btn-primary col-sm-4  float-right' %>
+<%= link_to 'Back', students_path, class:'btn btn-primary col-sm-4' %>
+</div>

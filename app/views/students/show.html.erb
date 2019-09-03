@@ -1,14 +1,25 @@
 <p id="notice"><%= notice %></p>
-
+<div class="card bg-light text-white text-center container">
 <p>
   <strong>Name:</strong>
-  <%= @student.name %>
+  <br>
+  <div class="card bg-muted text-white mr-5 ml-5 pt-2 pb-2"><%= @student.name %></div>
 </p>
 
 <p>
   <strong>Age:</strong>
-  <%= @student.age %>
+  <br>
+  <div class="card bg-muted text-white mr-5 ml-5 pt-2 pb-2"><%= @student.age %></div>
 </p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<p>
+  <strong>Email:</strong>
+  <br>
+  <div class="card bg-muted text-white mr-5 ml-5 pt-2 pb-2"><%= @student.email %></div>
+</p>
+</div>
+<br>
+<div class="container">
+<%= link_to 'Edit', edit_student_path(@student), class:'btn btn-primary col-sm-4 float-right' %>
+<%= link_to 'Back', students_path, class:'btn btn-primary col-sm-4' %>
+</div>
